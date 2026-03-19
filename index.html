@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Laboratorio | Sergio Aguilera</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f8fafb",
+              "tertiary-container": "#216356",
+              "on-secondary-container": "#007232",
+              "secondary": "#006d2f",
+              "on-background": "#191c1d",
+              "primary-fixed-dim": "#acc7ff",
+              "primary": "#003f87",
+              "inverse-primary": "#acc7ff",
+              "secondary-container": "#5dfd8a",
+              "on-secondary": "#ffffff",
+              "primary-container": "#0056b3",
+              "on-surface-variant": "#424752",
+              "on-tertiary": "#ffffff",
+              "surface-container-low": "#f2f4f5",
+              "tertiary": "#004b3f",
+              "surface-variant": "#e1e3e4",
+              "error": "#ba1a1a",
+              "outline-variant": "#c2c6d4",
+              "surface-container-highest": "#e1e3e4",
+              "on-tertiary-container": "#9cdccc",
+              "tertiary-fixed-dim": "#93d3c3",
+              "on-secondary-fixed-variant": "#005322",
+              "on-primary-fixed": "#001a40",
+              "inverse-on-surface": "#eff1f2",
+              "surface-tint": "#115cb9",
+              "on-secondary-fixed": "#002109",
+              "on-primary-fixed-variant": "#004491",
+              "on-error": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "tertiary-fixed": "#afefdf",
+              "surface-dim": "#d8dadb",
+              "surface-container-high": "#e6e8e9",
+              "surface-container-lowest": "#ffffff",
+              "error-container": "#ffdad6",
+              "background": "#f8fafb",
+              "primary-fixed": "#d7e2ff",
+              "surface-container": "#eceeef",
+              "outline": "#727784",
+              "secondary-fixed": "#66ff8e",
+              "secondary-fixed-dim": "#3de273",
+              "on-tertiary-fixed-variant": "#045044",
+              "surface-bright": "#f8fafb",
+              "on-tertiary-fixed": "#00201a",
+              "on-primary-container": "#bbd0ff",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-surface": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/10 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-bold tracking-tighter text-blue-900 dark:text-white font-headline">
+            Sergio Aguilera
+        </div>
+<div class="hidden md:flex items-center space-x-8 font-manrope text-sm font-medium tracking-tight">
+<a class="text-blue-900 dark:text-white border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#inicio">Inicio</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors" href="#servicios">Servicios</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full hover:scale-105 active:scale-95 duration-200 ease-in-out transition-transform" href="https://wa.me/56986050229">WhatsApp</a>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- SECCIÓN INICIO: Hero -->
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden" id="inicio">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block py-1 px-3 rounded-full bg-secondary-container text-on-secondary-fixed-variant text-xs font-semibold mb-6 tracking-wider uppercase">
+                    Laboratorista Dental Sergio Aguilera
+                </span>
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6">
+                    <span class="text-primary">Precisión y calidad</span> en cada trabajo dental.
+                </h1>
+                
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                    Laboratorio dental especializado en la fabricación y reparación de trabajos dentales para odontólogos y pacientes. 
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center bg-primary text-white font-semibold py-4 px-8 rounded-full hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 active:scale-95" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20sus%20servicios%20dentales">
+                        Consultar por WhatsApp
+                    </a>
+<a class="inline-flex items-center justify-center bg-surface-container-low text-primary font-semibold py-4 px-8 rounded-full hover:bg-surface-container-high transition-all active:scale-95" href="#servicios">
+                        Ver Servicios
+                    </a>
+</div>
+</div>
+<div class="relative lg:h-[600px] flex items-center justify-center">
+<div class="absolute inset-0 bg-primary/5 rounded-[40px] rotate-3 -z-10"></div>
+<img alt="Professional dental laboratory equipment" class="w-full h-full object-cover rounded-[32px] shadow-2xl" data-alt="Modern dental laboratory work environment with professional tools" src="img/protesis.jpg"/>
+</div>
+</div>
+<!-- Tonal Background Decoration -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-surface-container-low to-transparent -z-20"></div>
+</section>
+<!-- SECCIÓN SERVICIOS -->
+<section class="py-24 bg-surface-container-low" id="servicios">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4">Nuestras Soluciones</h2>
+<p class="text-on-surface-variant text-lg">Ofrecemos una amplia gama de servicios especializados con los más altos estándares de higiene y precisión clínica.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Servicio 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">mood</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Plan de relajación</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Protege los dientes y alivia bruxismo. Fabricadas en acrílico con ajuste preciso.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Acrílico</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>3-7 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Placas%20de%20relajación">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">dentistry</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Coronas dentales</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Restauraciones de forma y función en porcelana o cerámica de alta resistencia.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Porcelana</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>5-10 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Coronas%20dentales">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Prótesis Flexibles</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Reemplaza piezas dentales de forma funcional y económica con base de acrílico.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Acrílico</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>7-14 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20removibles">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Prótesis Parciales</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Estructura metálica para máxima resistencia y durabilidad, combinada con acrílico.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Metal + Acrílico</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>7-14 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20metálicas">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">construction</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Prótesis metálicas</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Estructura metálica para máxima resistencia y durabilidad, combinada con acrílico.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Metal + Acrílico</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>7-14 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20metálicas">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Planos de altura</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Confeccionados en cera y acrílico sobre los modelos de estudio del paciente</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Acrílico + Cera</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>3-5 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Blanqueamiento%20dental">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 7 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Pernos muñón</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Refuerza dientes dañados internamente con estructuras de metal o fibra.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Metal / Fibra</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>5-7 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Pernos%20muñones">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 7 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">science</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Cubetas individuales</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Cubetas fabricadas de forma personalizada para cada paciente, que ayudan a lograr impresiones dentales más precisas y confiables.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Flexible</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>5-10 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20flexibles">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+
+<!-- Servicio 8 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">auto_fix_high</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Blanqueamiento</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Tratamiento estético que aclara el color de los dientes, mejorando la apariencia de la sonrisa.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Flexible</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>5-10 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20flexibles">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+<!-- Servicio 8 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" data-icon="waves">waves</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Flexible</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow"></p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">flexible</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>5-10 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20flexibles">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+
+
+<!-- Servicio 8 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">account_tree</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Puentes fijos de porcelana</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Estéticas y cómodas sin ganchos metálicos, se adaptan naturalmente a la encía.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Flexible</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-secondary font-bold">Sí</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>5-10 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Prótesis%20flexibles">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+
+
+
+<!-- Servicio 9 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full hover:shadow-xl transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-6 text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">build</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 text-on-surface">Reparaciones</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Reparación inmediata de prótesis, ajustes y rebases para devolver funcionalidad.</p>
+<div class="space-y-2 mb-8 text-xs font-medium text-on-surface-variant">
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Material</span><span class="text-primary">Según tipo</span></div>
+<div class="flex justify-between py-2 border-b border-outline-variant/15"><span>Impresión</span><span class="text-on-surface-variant">No requerida</span></div>
+<div class="flex justify-between py-2"><span>Entrega</span><span>1-3 días</span></div>
+</div>
+<a class="mt-auto inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:underline" href="https://wa.me/56986050229?text=Hola,%20me%20gustaría%20consultar%20por%20el%20servicio%20de%20Reparaciones%20dentales">
+                        👉 Consultar por WhatsApp
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<img alt="Laboratory detailing work" class="rounded-3xl shadow-xl relative z-10" data-alt="Closeup of a dental technician working on a precision crown restoration" src="img/protesis2.jpg"/>
+</div>
+<div>
+<h2 class="font-headline text-3xl font-bold mb-6">Compromiso con la Calidad</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Materiales Certificados</h4>
+<p class="text-on-surface-variant text-sm">Utilizamos únicamente insumos odontológicos de grado médico con trazabilidad garantizada.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Tiempos de Entrega Reales</h4>
+<p class="text-on-surface-variant text-sm">Cumplimos rigurosamente con los plazos acordados para no retrasar los tratamientos.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN NUESTRO EXPERTO -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant/20" id="experto">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/3 flex justify-center">
+<div class="relative w-64 h-64 md:w-80 md:h-80">
+<div class="absolute inset-0 bg-primary/10 rounded-full -rotate-6 scale-105"></div>
+<div class="absolute inset-0 border-2 border-primary/20 rounded-full rotate-3"></div>
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-white shadow-xl relative z-10 bg-surface-container-highest flex items-center justify-center">
+<!-- Placeholder icon if no real photo, styled professionally -->
+<span class="material-symbols-outlined text-8xl text-outline-variant" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-2/3">
+<span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Dirección Técnica</span>
+<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-2">Sergio Aguilera</h2>
+<p class="text-secondary font-semibold text-lg mb-6 italic">Titulado en el Instituto Profesional Los Leones</p>
+<div class="space-y-4 max-w-2xl">
+<p class="text-on-surface-variant leading-relaxed">
+Trabajo en el área dental hace varios años, realizando cada caso de forma personalizada. Me preocupo de cada detalle para entregar un trabajo bien hecho y que cumpla con lo que realmente se necesita.                        </p>
+<p class="text-on-surface-variant leading-relaxed">
+                            "Mi compromiso es con cada paciente y odontólogo. Entendemos que detrás de cada pieza dental hay una sonrisa y una calidad de vida que restaurar. Por ello, la precisión no es negociable, es nuestra firma."
+                        </p>
+</div>
+<div class="mt-8 flex flex-wrap gap-4">
+<div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-outline-variant/30 text-xs font-medium shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified">verified</span>
+                            Certificación Técnica
+                        </div>
+<div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-outline-variant/30 text-xs font-medium shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="high_quality">high_quality</span>
+                            Especialista en Prótesis
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto border-t border-slate-200/50 dark:border-slate-800/50 pt-12">
+<div class="space-y-4">
+<div class="font-manrope font-bold text-lg text-blue-900 dark:text-white">
+                Laboratorio Dental Sergio Aguilera
+            </div>
+<p class="font-inter text-xs text-slate-500 dark:text-slate-400 max-w-xs">
+                Innovación y detalle en cada restauración dental. Servicio especializado para clínicas y particulares.
+            </p>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-headline text-sm font-bold text-on-surface mb-2">Enlaces</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 underline transition-all text-xs" href="#inicio">Inicio</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 underline transition-all text-xs" href="#servicios">Servicios</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 underline transition-all text-xs" href="#experto">Nuestro Experto</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-headline text-sm font-bold text-on-surface mb-2">Contacto</span>
+<a class="text-blue-600 dark:text-blue-400 font-semibold text-xs opacity-80 hover:opacity-100" href="https://wa.me/56986050229">WhatsApp</a>
+<span class="text-slate-500 dark:text-slate-400 text-xs">Atención Lunes a Viernes 09:00 - 18:00</span>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200/20 text-center">
+<p class="font-inter text-xs text-slate-500 dark:text-slate-400">
+            © 2024 Laboratorio Dental Sergio Aguilera. Todos los derechos reservados.
+        </p>
+</div>
+</footer>
+<!-- BottomNavBar (WhatsApp FAB) -->
+<div class="fixed bottom-8 right-8 z-50">
+<a class="bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-green-500/20 hover:scale-110 hover:bg-green-600 active:scale-90 transition-all duration-150" href="https://wa.me/yournumber" title="WhatsApp">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</div>
+</body></html>
